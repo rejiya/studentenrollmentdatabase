@@ -1,0 +1,13 @@
+create table student(studentId int primary key AUTO_INCREMENT not null, name varchar(255), dept varchar(255), age int, cutoff varchar(255), status ENUM ('APPROVED','REJECTED','APPLIED'));
+ALTER TABLE student MODIFY COLUMN status ENUM ('APPROVED','REJECTED','APPLIED') NOT NULL DEFAULT 'APPLIED';
+create table department(departmentId int not null primary key auto_increment, departmentName varchar(255), availableSeats int);
+insert into department(departmentName, availableSeats) values('CSE',10);
+insert into department(departmentName, availableSeats) values('IT',10);
+insert into department(departmentName, availableSeats) values('ECE',10);
+insert into department(departmentName, availableSeats) values('EEE',10);create table student(studentId int primary key AUTO_INCREMENT not null, name varchar(255), dept varchar(255), age int, cutoff varchar(255), status ENUM ('APPROVED','REJECTED','APPLIED'));
+ALTER TABLE student MODIFY COLUMN status ENUM ('APPROVED','REJECTED','APPLIED') NOT NULL DEFAULT 'APPLIED';
+create table department(departmentId int not null primary key auto_increment, departmentName varchar(255), availableSeats int);
+insert into department(departmentName, availableSeats) values('CSE',10);
+insert into department(departmentName, availableSeats) values('IT',10);
+insert into department(departmentName, availableSeats) values('ECE',10);
+insert into department(departmentName, availableSeats) values('EEE',10);
